@@ -1,0 +1,238 @@
+body{
+    background: #f0f2f5;
+    /* background: #e6e6e6; */
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type="button"]{
+    cursor: pointer;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s ease-out;
+}
+
+
+.olvidaste-contrasena{
+    margin-top: 15px;
+    color: #1877f2;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+}
+
+.iniciar-sesion{
+    background: #1877f2;
+    padding: 10px;
+}
+
+.iniciar-sesion:hover{
+    background: #166fe5;
+    
+}
+
+.cuenta-nueva {
+    background: #42b72a;
+    padding: 10px 15px;
+}
+
+.cuenta-nueva:hover{
+    background: #36a420;
+}
+
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1140px;
+    max-width: 90%;
+}
+
+.contenedor-form{
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(90, 90, 90, 0.342);
+    padding: 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 350px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campos{
+    border: 1px solid rgba(204, 204, 204, 0.582);
+    border-radius: 5px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.campos::placeholder{
+    color: rgb(158, 158, 158);
+    font-family: helvetica, arial, sans-serif;
+}
+
+.password{
+    margin: 15px 0;
+}
+
+
+.img {
+    width: 320px;
+    margin: -35px;
+}
+
+.parrafo{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 28px;
+    width: 500px;
+}
+
+
+.linea{
+    background: rgb(214, 214, 214);
+    width: 100%;
+    height: 1px;
+
+}
+
+.letra-o{
+    display: none;
+}
+
+
+.pagina{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.crear-pagina{
+    color: #000;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 948px) {
+    body {
+        background: #fff;
+    }
+
+    .contenedor-form{
+        box-shadow: none;
+        padding: 0 20px;
+
+    }
+
+    .campos{
+        background:#f5f6f7;
+        box-shadow: 0.5px 0.5px 1px rgb(195, 195, 195);
+        border-radius: 3px;
+    }
+
+    .campos::placeholder{
+        color: rgb(112, 112, 112);
+    }
+
+    .password{
+        margin: 5px 0 10px;
+    }
+
+    .cuenta-nueva{
+        font-size: 15px;
+        background: #00a400;
+    }
+
+
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 90%;
+        height: 100vh;
+    }
+
+    .contenedor-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .parrafo{
+        display: none;
+    }
+
+    .pagina{
+        display: none;
+    }
+
+
+    .linea{
+        display: none;
+    }
+
+    .contenedor-letra{
+        width: 100%;
+        /* height: 2000px; */
+        margin: 30px 0;
+        text-align: center;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 22px;
+        position: relative;
+    }
+
+    .contenedor-letra:after{
+        content: '';
+        width: 100%;
+        border-bottom: solid 1px rgb(219, 219, 219);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .letra-o{
+        background-color: #fff;
+        width: auto;
+        display: inline-block;
+        z-index: 3;
+        padding: 0 20px 0 20px;
+        color: black;
+        position: relative;
+        font-family: calibri;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    .img{
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    /* .letra-o::before, .letra-o::after{
+        display: inline-block;
+        content: "";
+        border-top: .3rem solid black;
+        width: 4rem;
+        margin: 0 1rem;
+        transform: translateY(-1rem);
+    } */
+}
